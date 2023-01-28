@@ -1,7 +1,6 @@
 import random
 
 num = random.randint(1,100)
-
 guesses = [0]
 
 while True:
@@ -27,6 +26,8 @@ while True:
     if guesses[-2] > 0:  
         if abs(num-guess) < abs(num-guesses[-2]):
             print('WARMER!')
+        elif abs(num-guess) == abs(num-guesses[-2]):
+            print("AS PREVIOUS!")
         else:
             print('COLDER!')
    
