@@ -3,7 +3,6 @@ import random
 def main():
     n = random.randint(1,100)
     guess_number = []
-    print(n)
     while True:
         x = int(input("Guess the number: "))
         if x < 1 or x > 100:
